@@ -31,6 +31,11 @@ public class PersonController {
 		return IteratorUtils.toList(persons.iterator());
 	}
 
+	@RequestMapping(method = RequestMethod.GET, path="/teens")
+	public List<Person> teens() {
+		return repository.getTeens();
+	}
+
 	@RequestMapping(method = RequestMethod.POST)
 	public String add(@RequestBody Person person) {
 		repository.save(person);
