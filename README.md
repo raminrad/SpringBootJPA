@@ -29,4 +29,6 @@ You can use *curl* to test the Restful services:
 1. GET all persons: ```curl http://localhost:8080/person/list```
 2. Save a new person: ```curl -H "Content-Type: application/json" -X POST -d '{"name": "Person 1", "age": 12}' http://localhost:8080/person/```
 
+A sample shell script, ```curlTest.sh``` is provided for testing.
+
 # DONE!
