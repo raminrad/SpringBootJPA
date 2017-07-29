@@ -1,5 +1,7 @@
 build
 bin
+lib
+.idea
 .gradle
 .classpath
 .project
